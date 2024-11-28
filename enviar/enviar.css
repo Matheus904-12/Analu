@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     color: #fff;
-    background-image: url(back.png);
+    background-repeat: no-repeat;
 }
 
 
@@ -232,4 +232,14 @@ button:hover {
 
 .container.sign-up-mode .panels-container {
     transform: translateX(-100%);
+}
+
+.imagem-fundo {
+    position: absolute; /* Fixa a imagem atrás do conteúdo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz a imagem ocupar toda a largura */
+    height: 100%; /* Faz a imagem ocupar toda a altura */
+    object-fit: cover; /* Garante que a imagem seja ajustada corretamente */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
 }
